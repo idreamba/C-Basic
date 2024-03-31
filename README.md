@@ -1,5 +1,13 @@
 ## Setup Debuging for C Language (MAC)
 
+### topic
+- variable
+- data type
+- condition
+- loop
+- string
+- array
+
 อ้างอิง : https://code.visualstudio.com/docs/cpp/config-clang-mac
 
 ### launch.json
