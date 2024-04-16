@@ -86,3 +86,9 @@
 | %x or %X         | Hexadecimal representation                 |
 | %n               | Prints nothing                             |
 | %%               | Prints % character                         |
+
+### การจองพื้นที่หน่วยความจำ (Memory Allocation) ด้วย Pointer
+- malloc
+- calloc
+- realloc
+- free

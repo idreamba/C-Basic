@@ -6,7 +6,7 @@
 /*   By: karee <idreamba@gmail.com>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/29 13:12:49 by karee             #+#    #+#             */
-/*   Updated: 2024/03/29 13:12:51 by karee            ###   ########.fr       */
+/*   Updated: 2024/04/13 16:51:01 by karee            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,28 @@
 #include <string.h>
 
 int main(){
-	int *ip;
-	int a[] = {31, 14};
+	int a = 10;
+	int b = 20;
+	int c = 30;
+	int *ip; // ตัวแปรแบบ pointer ใช้ * ในการประกาศ
 
-	ip = a; // เขียนอีกแบบ ip = &a[0];
+	printf("Address of a: %p, Value of a: %d\n", &a, a);
+	printf("Address of b: %p, Value of b: %d\n", &b, b);
+	printf("Address of c: %p, Value of c: %d\n", &c, c);
 
-	ip++;
+	// ip = &a; // ให้ ip ชี้ไปที่ a
+	ip = &b;
+	// ip = &c;
+	printf("Address of ip: %p\n", ip); // ไม่มีดาวใช้ดู address
+	printf("Value of ip: %d\n", *ip); // ดาว คือ ใช้ดูค่า
 
-	printf("variable a value: %d and address: %p\n",a[0],a);
-	printf("variable ip: address: %p, value point from a: %d\n",ip, *ip);
+	*ip = 100; // ให้ค่าที่ ip ชี้ไปเป็น 100
+	printf("Address of ip: %p\n", ip); // ไม่มีดาวใช้ดู address
+	printf("Value of ip: %d\n", *ip); // ดาว คือ ใช้ดูค่า
+
+	printf("Address of b: %p, Value of b: %d\n", &b, b);
+
+
+	return 0;
 
 }
